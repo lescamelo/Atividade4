@@ -3,12 +3,5 @@
 read -p "Digite um número: " numero_1
 read -p "Digite um número: " numero_2
 
-if [ "$numero_1" -lt "$numero_2" ];
+(( ${numero_1} <  ${numero_2} )) && echo "O menor valor é:  ${numero_1}" || echo "O menor valor é: ${numero_2}" 
 
-	then
-		echo "Menor valor digitado é "$numero_1""
-
-	else 
-		echo "Menor valor digitado é "$numero_2""
-
-fi 
